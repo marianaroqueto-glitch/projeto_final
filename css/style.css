@@ -1,0 +1,200 @@
+/* ======================================================= */
+/* 1. VARIÁVEIS CSS E RESET BÁSICO (Paleta Vinho e Dourado) */
+/* ======================================================= */
+:root {
+    --cor-principal: #800020;   /* Vinho/Bordô Escuro */
+    --cor-secundaria: #B7414A;  /* Marsala/Vinho Médio */
+    --cor-fundo: #FAFAFA;      /* Branco Suave */
+    --cor-texto-escuro: #333333;
+    --cor-texto-claro: #FFFFFF;
+    --cor-destaque: #FFD700;    /* Dourado */
+    --cor-sucesso: #28a745;     /* Verde para o botão "Confira" */
+    
+    /* Google Fonts (Mantendo as fontes sofisticadas) */
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-corpo: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+}
+
+/* Restante do reset e container... */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-principal); /* Títulos em Vinho */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p { line-height: 1.6; }
+
+
+/* ======================================================= */
+/* 2. NAVEGAÇÃO (NAVBAR) COM FLEXBOX */
+/* ======================================================= */
+.navbar {
+    background-color: var(--cor-secundaria); /* Fundo Vinho Médio */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 30px; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: var(--cor-principal); /* Hover Vinho Escuro */
+    border-radius: 5px;
+}
+
+
+/* ======================================================= */
+/* 3. BANNER/CABEÇALHO */
+/* ======================================================= */
+.banner {
+    background-color: var(--cor-principal); /* Fundo Vinho Escuro */
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+}
+
+.banner-conteudo h1 {
+    color: var(--cor-destaque); /* Título do banner em Dourado */
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+.banner-conteudo p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+
+/* ======================================================= */
+/* 4. GALERIA/PACOTES COM FLEXBOX (Novo Estilo) */
+/* ======================================================= */
+
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 30px;
+}
+
+.galeria-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: calc(25% - 20px); 
+    min-width: 250px; 
+    overflow: hidden; /* Garante que a imagem se ajuste ao canto */
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.img-galeria {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.detalhes-pacote {
+    padding: 15px;
+}
+
+.nome-destino {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    color: var(--cor-principal); /* Nome do Destino em Vinho */
+    margin: 10px 0;
+}
+
+.valor-destaque {
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: var(--cor-texto-escuro);
+}
+
+.valor-passagem-principal {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--cor-principal); /* Valor principal em Vinho Escuro */
+    margin: 5px 0 10px 0;
+}
+
+.valor-passagem-principal strong {
+    font-size: 1em; /* Tamanho da fonte do R$ */
+}
+
+/* Botão de Destaque "Confira" */
+.btn-confira {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-destaque); /* Dourado */
+    color: var(--cor-principal); /* Texto em Vinho */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-confira:hover {
+    background-color: gold; /* Dourado mais claro no hover */
+}
+
+
+/* ======================================================= */
+/* 5. ESTILOS GERAIS E RODAPÉ */
+/* ======================================================= */
+.conteudo-principal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--cor-principal); /* Rodapé em Vinho Escuro */
+    color: var(--cor-texto-claro);
+    margin-top: 40px;
+    font-size: 0.9em;
+}
