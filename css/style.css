@@ -139,6 +139,7 @@ p { line-height: 1.6; }
     font-size: 1.5em;
     color: var(--cor-principal); 
     margin: 10px 0;
+    align-items: center;
 }
 
 .valor-destaque {
@@ -194,4 +195,72 @@ footer {
     color: var(--cor-texto-claro);
     margin-top: 40px;
     font-size: 0.9em;
+}
+
+.login {
+    display: flex; 
+    align-items: center;
+    margin-right: 20px; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+/* ---------------------------------------------------- */
+/* AJUSTES NA BARRA DE NAVEGAÇÃO (NAVBAR) */
+/* ---------------------------------------------------- */
+
+/* Faz com que a navbar use Flexbox para alinhar os itens */
+.navbar {
+    display: flex;
+    /* Alinha os itens verticalmente no centro */
+    align-items: center; 
+    /* Distribui o espaço igualmente. Isso fará com que 
+       os links principais fiquem à esquerda e o nav-auth à direita */
+    justify-content: space-between; 
+    
+    background-color: #8B002A; /* Sua cor Vinho */
+    padding: 10px 20px; /* Adiciona algum padding */
+}
+
+/* Garante que os grupos de links estejam em linha */
+.nav-links {
+    display: flex;
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para os links da navbar */
+.nav-links li a {
+    color: #F8F9FA; /* Cor clara para os links padrão */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; 
+}
+
+/* Cor Dourada/Amarela para o link ativo (Opcional, mas recomendado) */
+.nav-links li a:hover {
+    color: #FFD700; 
+}
+
+/* Ajuste específico para o link de Autenticação */
+.nav-auth li a {
+    /* Cor Dourada/Amarela para o destaque do login */
+    color: #FFD700; 
+    font-weight: bold;
+    /* Adiciona borda (Opcional, para destacar ainda mais) */
+    /* border: 1px solid #FFD700;
+    border-radius: 5px; */
+}
+
+/* Estiliza o ícone SVG */
+.nav-auth svg {
+    /* Colore o ícone de Dourado */
+    fill: #FFD700; 
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
 }

@@ -1,0 +1,71 @@
+:root {
+    --cor-primaria: #8B002A; 
+    --cor-secundaria: #FFD700; 
+    --cor-fundo: #F8F9FA; 
+    --fonte-luxo: 'Playfair Display', serif; 
+}
+#contato {
+    background-color: var(--cor-fundo) !important; 
+    padding: 80px 0; 
+}
+
+
+#contato h2 {
+    font-family: var(--fonte-luxo);
+    color: var(--cor-primaria) !important; 
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+}
+
+
+#contato .alert-info {
+    background-color: #FEEEDD; 
+    border-color: var(--cor-secundaria); 
+    border-left: 5px solid var(--cor-secundaria); 
+    color: #495057; 
+}
+
+
+#contato .alert-heading {
+    color: var(--cor-primaria); 
+    font-weight: 600;
+}
+
+#contato .card {
+    border-radius: 12px; 
+    transition: all 0.4s ease;
+    border: none; 
+}
+#contato .card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important; 
+}
+
+
+#contato .fa-3x {
+    color: var(--cor-secundaria) !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+/* Botão de E-mail (Primary) - Vinho */
+#contato .btn-primary {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    font-weight: 600;
+}
+
+#contato .btn-primary:hover {
+    background-color: #6A001A;
+    border-color: #6A001A;
+}
+
+/* Botão de WhatsApp (Success) */
+#contato .btn-success {
+    background-color: #25D366; 
+    border-color: #25D366;
+    font-weight: 600;
+}
+
+

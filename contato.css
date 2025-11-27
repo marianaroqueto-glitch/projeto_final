@@ -1,0 +1,72 @@
+/* ---------------------------------------------------- */
+/* ESTILIZAÇÃO DA SEÇÃO DE CONTATO */
+/* ---------------------------------------------------- */
+
+#contato {
+    /* Define a cor de fundo da seção (mantendo o bg-light do Bootstrap) */
+    background-color: var(--cor-fundo) !important; 
+    padding: 60px 0; /* Espaçamento interno */
+}
+
+/* Título principal da seção */
+#contato h2 {
+    font-family: var(--fonte-luxo);
+    color: var(--cor-primaria) !important; /* Cor Vinho para o título */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Alerta/Caixa de Texto Explicativo */
+#contato .alert-info {
+    background-color: #FEEEDD; /* Um creme/amarelo claro para suavizar o dourado */
+    border-color: var(--cor-secundaria); /* Borda Dourada */
+    color: #495057; /* Texto em cor escura para boa leitura */
+}
+
+/* Cabeçalho do Alerta */
+#contato .alert-heading {
+    color: var(--cor-primaria); /* Cor Vinho */
+    font-weight: 600;
+}
+
+/* Estilização dos Cards de Contato */
+#contato .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #E0E0E0;
+}
+
+#contato .card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícones */
+#contato .fa-3x {
+    /* Cor dos ícones - Dourado */
+    color: var(--cor-secundaria) !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+/* Botão de E-mail (Primary) */
+#contato .btn-primary {
+    background-color: var(--cor-primaria); /* Fundo Vinho */
+    border-color: var(--cor-primaria);
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+#contato .btn-primary:hover {
+    background-color: #6A001A; /* Vinho mais escuro no hover */
+    border-color: #6A001A;
+}
+
+/* Botão de WhatsApp (Success) */
+#contato .btn-success {
+    /* Mantendo o verde do WhatsApp, mas com um toque mais sofisticado */
+    background-color: #25D366; 
+    border-color: #25D366;
+    font-weight: 600;
+}
